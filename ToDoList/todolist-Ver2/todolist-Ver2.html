@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./todolist-Ver2.css">
+  <title>todolist-Ver2</title>
+</head>
+<body>
+  <div class="container">
+    <h1>To-do List</h1>
+    <div class="add-element">
+      <input onkeyup="enterkey();" type="text" id="add" placeholder="내용을 입력해주세요.">
+      <button id="btn" onclick="javascript:listAdd()">Add</button>
+    </div>
+
+    <div class="element-list">
+      <ul id="list">
+      </ul>
+    </div>
+  </div>
+  <script src="./todolist-Ver2.js"></script>
+</body>
+</html>
