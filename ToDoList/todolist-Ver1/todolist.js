@@ -66,3 +66,6 @@ function init() {
 }
 
 init();
+as= [a,s,d,f,g,h].map((a)=>{
+return a+'124'
+})

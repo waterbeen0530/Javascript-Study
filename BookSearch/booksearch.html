@@ -14,7 +14,11 @@
     <input id="bookName" value="" type="text" placeholder="제목을 입력하세요.">
     <button id="search">검색</button>
 
-    <p></p>
+    <div class="element-list">
+      <ul id="list">
+      </ul>
+    </div>
+
   </div>
   
   <script src="https://code.jquery.com/jquery-3.6.0.js"
@@ -31,14 +35,16 @@
         headers: {Authorization: "KakaoAK 9af4b9e0fc0a3c9890883b196ef2184e"}
     })
     .done(function( msg ) {
-        console.log(msg.documents[0].title);
         console.log(msg.documents[0].thumbnail);
-        $("p").append("<strong>"+ msg.documents[0].title+"</strong>");
-        $("p").append("<img src='"+ msg.documents[0].thumbnail +"'/>");
+        console.log(msg.documents[0].title);
+        $("li").append("<img src='"+ msg.documents[0].thumbnail +"'/>");
+        $("ul").append("<li>"+ msg.documents[0].title+"</li>");
     });
       })
     })
     
   </script>
+
+  <script src="./booksearch.js"></script>
 </body>
 </html>
