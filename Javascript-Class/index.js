@@ -1,32 +1,35 @@
-//forEach
-const array = ['일', '이', '삼', '사'];
+//map
+const array = [1, 2, 3, 4, 5, 6, 7, 8];
 
-//for문의 기존 방법
-for(let i = 0; i < array.length; i++)  {
-  console.log(array[i]);
+//기존의 방법으로 값을 제곱하기
+const squared = [];
+for (let i = 0; i < array.length; i++) {
+  squared.push(array[i] * array[i]);
 }
 
-//forEach문을 통해 개선
-array.forEach(hero => {
-  console.log(hero);
+console.log(squared);
+
+//forEach 사용
+const forSquared = [];
+
+array.forEach(n => {
+  forSquared.push(n * n);
 });
 
-//예제1 - 배열 값 합산
-let sum = 0;
-const nums = [10, 20, 30, 40];
-nums.forEach(plus);
+console.log(forSquared);
 
-function plus(item) {
-  sum += item;
-  document.getElementById("result1").innerHTML = sum;
-}
+//map 사용
+const mapSquare = n => n * n;
+const mapSquared = array.map(mapSquare);
+console.log(mapSquare);
 
-//예제2 - 각 배열값을 10배로 수정
-const number = [10, 20, 30, 40];
-number.forEach(multiple)
+//map object
+const students = [
+  {id:1, name:"subin"},
+  {id:2, name:"soyeon"},
+  {id:1, name:"chaeyeon"},
+  {id:1, name:"taerim"}
+];
 
-function multiple(value, index, arr) {
-  arr[index] = value * 10;
-}
-
-document.getElementById("result2").innerHTML = number;
+let names = students.map(student => student.name);
+console.log(names);
