@@ -50,15 +50,18 @@ section {
 }
 
 .btnWrapper {
-  width: 195px;
+  width: fit-content;
   display: flex;
+  gap: 10px;
   justify-content: space-between;
   align-items: center;
 }
 
 .btnWrapper button {
-  width: auto;
+  width: fit-content;
   height: 30px;
+  padding: 3px 4px;
+  white-space: nowrap;
 }
 
 p {
