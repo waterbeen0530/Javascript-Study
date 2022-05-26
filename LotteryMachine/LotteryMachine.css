@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 850px;
+  height: 500px;
+  gap: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px rgb(168, 168, 168);
+}
+
+.container h1 {
+  position: absolute;
+  top: 30px;
+  left: 40%;
+  font-size: 50px;
+  text-align: center;
+}
+
+.lottoWrapper p {
+  padding-top: 15px;
+  text-align: center;
+}
+
+#lotto {
+  width: 520px;
+  height: 120px;
+  padding: 30px;
+  border-radius: 30px;
+  gap: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fafafa;
+}
+
+#lotto p {
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+#bonus {
+  padding-top: 15px;
+  text-align: center;
+}
+
+#addLotto {
+  width: 120px;
+  height: 120px;
+  margin: 0;
+  padding: 0;
+  border-radius: 30px;
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#addLotto p {
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#yellow {
+  background: #fbc400;
+  text-shadow: 0px 0px 3px rgb(73 57 0 / 80%);
+}
+
+#blue {
+  background-color: #69c8f2;
+  text-shadow: 0px 0px 3px rgb(0 49 70 / 80%);
+}
+
+#red {
+  background-color: #ff7272;
+  text-shadow: 0px 0px 3px rgb(64 0 0 / 80%);
+}
+
+#gray {
+  background-color: #aaa;
+  text-shadow: 0px 0px 3px rgb(61 61 61 / 80%);
+}
+
+#green {
+  background-color: #b0d840;
+  text-shadow: 0px 0px 3px rgb(41 56 0 / 80%);
+}
+
+#dkd {
+  color: aqua;
+}
+
+#js {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  font-size: 12px;
+  color: bisque;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 1000000;
+}
+
+.plus {
+  background-image: url("./img/plus.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 20px;
+}
