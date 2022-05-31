@@ -6,11 +6,14 @@ input_btn.addEventListener("click", addItem);
 
 function addItem() {
   let item = document.getElementById("item").value;
-  if (item !== null) {
+  if (item === "") {
+    alert("내용을 입력해주세요.");
+  } else if (item !== null) {
     itemList.push(item);
     document.getElementById("item").value = "";
     document.getElementById("item").focus;
   }
+
   showList();
 }
 
