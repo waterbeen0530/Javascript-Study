@@ -12,8 +12,8 @@ function addItem() {
     itemList.push(item);
     document.getElementById("item").value = "";
     document.getElementById("item").focus;
+    saveList();
   }
-
   showList();
 }
 
@@ -26,7 +26,7 @@ function showList() {
       "<span class='close' id=" +
       i +
       ">" +
-      "❌" +
+      "🗑️" +
       "</span></li>";
   }
   list += "</ul>";
@@ -50,3 +50,8 @@ function handleEnter(event) {
   }
 }
 item.addEventListener("keydown", handleEnter);
+
+function saveList() {
+  console.log("dsjfl");
+  localStorage.setItem("itemList", JSON.stringify);
+}
